@@ -1,0 +1,88 @@
+body{
+	margin: 0px;
+	padding: 0px;
+}
+
+.header{
+	background-color: lightblue; 
+	height: 200px; 
+	width: 100%;
+}
+
+.nav_bar {
+  	display: block;
+  	height:40px; 
+  	background: rgba(235, 250, 125,0.5); 
+  	font-size:30px;
+  	text-align: center;
+  	margin-left:11%;
+  	margin-right:9%;
+  	position: absolute;
+}
+
+.header_nav{
+	text-decoration:none;
+	color: black;
+	padding: 5px;
+	margin: 5px;	
+}
+
+.header_nav:hover{
+	background-color:yellow;
+  	font-size: 35px;
+}
+
+.contact_heading{
+	margin-top: 0px;
+	padding-top: 130px;
+	text-align: center;
+}
+
+.container_div{
+  	height: 400px;
+  	width: 48%;
+  	border: 2px solid;
+  	float: left;
+  	/*display: inline-block;*/
+  	box-sizing: border-box;
+  	margin-top: 30px;
+  	margin-left: 18px;
+ }
+
+.right_div{
+ overflow: hidden;
+ /*background-color: red;*/
+ }
+
+.input{
+	width: 250px;
+}
+
+.textarea{ 
+	width: 350px;
+}
+
+
+.submitButton{
+	width:150px;
+	height:30px;
+	border-radius:25px;
+}
+
+.submitButton:hover{
+	background-color: lightblue;
+}
+
+
+.form_table{
+	width:550px;
+	border:0;
+}
+
+dt{
+	font-size: 25px;
+	font-weight: bold;
+	padding-bottom: 25px;
+	padding-top: 15px;
+	padding-left: 25px;
+}

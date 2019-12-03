@@ -1,0 +1,233 @@
+#img{
+	width: 100%;
+	height: 600px;
+  z-index: -1;
+}
+
+.nav_bar {
+  display: block;
+  height:40px; 
+  background: rgba(235, 250, 125,0.5); 
+  font-size:30px;
+  text-align: center;
+  margin-left:12%;
+  margin-right:9%;
+  position: absolute;
+}
+
+.header_nav{
+	text-decoration:none;
+	color: black !important;
+	padding: 5px;
+	margin: 5px;	
+}
+
+.header_nav:hover{
+	background-color:yellow;
+  font-size: 35px;
+}
+
+.text_overimage{
+  position: absolute;
+  top: 150px;
+  left: 100px;
+  background-color: white;
+}
+.text_overimage1{
+  position: absolute;
+  top: 187px;
+  left:100px;
+  color: white;
+  background-color: #0E0C38;
+}
+
+.first_section{
+  margin-right: 20px;
+}
+
+.heading1{
+  text-align: center;
+  margin-top: 25px;
+  padding-top: 10px;
+}
+
+.text1{
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.image_div{
+  display: inline-block;
+  width: 22%;
+  margin: 10px;
+  margin-right:10px
+}
+
+.block_image{
+  position: relative;
+  left:90px;
+  margin: 5px;
+  height:100px;
+  width:100px;
+}
+
+.fig_caption{
+  text-align: center;
+  margin: 10px;  
+}
+
+/**/
+
+.second_section{
+  background-image: url("images/banner.jpg");
+  /*background-color:lightblue;*/
+  height: 300px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.heading2{
+  text-align:center;
+  margin-top:50px;
+  padding: 10px;
+}
+
+/*before pseudo element*/
+.heading2::before {
+  content: " B ";
+  background-color: yellow;
+  border-color: black;
+  border-style: dotted;
+}
+
+/*after pseudo elements*/
+.heading2::after {
+  content: " A ";
+  background-color: yellow;
+  border-color: black;
+  border-style: dotted;
+}
+
+.text2{
+  padding: 20px;
+}
+
+.button{
+  height: 40px;
+  width: 200px;
+  font-size: 13px;
+  border-radius:5%;
+  background-color:lightgreen;
+  padding:10px;
+  margin: 10px;
+  border: 1px solid;
+}
+
+.button:hover{
+  background-color:green;
+}
+
+
+/**/
+
+.gallery_image{
+  height:150px ;
+  width:220px;
+}
+
+.heading3{
+  text-align:center;
+  margin-top:50px;
+}
+
+.text3{
+  text-align: center;
+}
+
+.gallery_div{
+  display: inline-block;
+  width: 22%;
+  margin: 10px;
+  padding: 10px;
+}
+
+.third_section{
+  padding-bottom: 100px;
+}
+.third_section:hover{
+  border:5px solid gray;
+
+}
+
+.gallery_image:hover{
+  border:5px solid yellow;
+  height: 300px;
+  width: 300px;
+}
+
+.text2::selection {
+  color: #ff0000;
+  background-color: yellow;
+}
+
+
+
+
+
+
+
+
+
+/* slider styliing */
+
+*, *:after, *:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.slides-container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 200px;
+}
+
+.slide {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  padding: 2em 2em 5em;
+  color: white;
+  background: lightblue;
+  /*border-radius: 35px;*/
+}
+
+.slides-container input[type="radio"]:checked + .slide {
+  visibility: visible;
+  opacity: 1;
+}
+
+.hidden {
+  position: absolute;
+  opacity: 0;
+  overflow: hidden;
+}
+
+label.slide-dot {
+  position: absolute;
+  z-index: 100;
+  bottom: 2em;
+  left: 10.52em;
+  width: 1em;
+  height: 1em;
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slides-container input[type="radio"]:checked ~ label {
+  background: #2ca58d;
+}

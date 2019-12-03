@@ -1,0 +1,56 @@
+body{
+  padding:0px;
+  margin: 0px;
+}
+.nav_bar {
+  display: block;
+  height:40px; 
+  background: rgba(235, 250, 125,0.5); 
+  font-size:30px;
+  text-align: center;
+  margin-left:11%;
+  margin-right:9%;
+  position: absolute;
+}
+
+.header_nav{
+	text-decoration:none;
+	color: black;
+	padding: 5px;
+	margin: 5px;	
+}
+
+.header_nav:hover{
+	background-color:yellow;
+  font-size: 35px;
+}
+
+.header{
+  height: 200px;
+  width: 100%;
+  padding:0px;
+  margin:0px;
+  /*background-color: rgba(2, 42, 107,0.8);*/
+  background-color: lightblue;
+}
+
+
+.heading_gallery{
+  margin-top: 0;
+  padding-top:10%;
+  font-family: serif;
+  text-align: center;
+}
+
+.gallery_image{
+  height:150px ;
+  width:220px;
+}
+
+.gallery_div{
+  display: inline-block;
+  width: 30%;
+  margin: 5px;
+  padding: 5px;
+}
+

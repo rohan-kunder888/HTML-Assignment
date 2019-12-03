@@ -1,0 +1,153 @@
+html{
+
+}
+.header{
+	background-color: lightblue; 
+	height: 200px; 
+	width: 100%;
+}
+
+.header__nav {
+  	display: block;
+  	height:40px; 
+  	background: rgba(235, 250, 125,0.5); 
+  	font-size:30px;
+  	text-align: center;
+  	margin-left:11%;
+  	margin-right:9%;
+  	position: absolute;
+}
+
+.header_navItem{
+	text-decoration:none;
+	color: black;
+	padding: 5px;
+	margin: 5px;	
+}
+
+.header_navItem:hover{
+	background-color:yellow;
+  	font-size: 35px;
+}
+
+.feedback_heading{
+	margin-top: 0px;
+	padding-top: 130px;
+	text-align: center;
+}
+
+.parentsection__child{
+	width: 49%;
+	/*display: inline-block;*/
+	float: left;
+	border: 3px solid black;
+	box-sizing: border-box;
+	margin-top: 30px;
+	margin-left: 5px;
+	height: auto;
+}
+
+.leftchild{
+	/*overflow: hidden;*/
+}
+
+.rightchild{
+	overflow: hidden;
+}
+
+.form__input{
+	margin:10px;
+	width: 250px
+}
+
+input:required{
+	border: 2px solid red;
+}
+
+.form__input:focus{
+	background-color: yellow;
+}
+
+.form__input:hover{
+	width: 300px;
+	height: 20px;
+}
+
+.age:in-range{
+	background-color: rgba(0, 255, 0, 0.25);
+}
+
+.age:out-of-range {
+  background-color: rgba(255, 0, 0, 0.25);
+  border: 2px solid red;
+}
+
+.textarea{ 
+	width: 350px;
+}
+
+.form__checkbox{
+	margin-top: 10px;
+	margin-left: 100px;
+}
+
+/*.checkbox_text{
+	display:none;
+}*/
+
+.form__checkbox:hover{
+	font-size: 20px;
+	color: green;
+}
+
+.form__checkbox:checked{
+	margin-bottom:40px;
+}
+
+.submitButton{
+	width:150px;
+	height:30px;
+	border-radius:25px;
+	margin-left: 150px;
+	margin-top: 10px;
+}
+
+.submitButton:hover{
+	background-color: lightblue;
+}
+
+
+.first__child{
+	padding: 10px 8px 10px 10px;
+}
+
+.first__child:hover{
+	background-color: yellow;
+}
+
+.second__child{
+	padding: 10px 8px 10px;
+}
+
+.second__child::selection{
+	background-color:orange;
+	color:blue;
+	padding: 10px 8px 10px;
+}
+
+.third__child{
+padding: 10px 8px;
+}
+
+.third__child:first-line{
+	color: orange;
+}
+
+.fourth__child{
+	padding: 10px;
+}
+
+.fourth__child:hover{
+	color: red;
+	background-color: yellow;
+}
